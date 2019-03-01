@@ -6,7 +6,7 @@ SQL注入，作为一个面试难点
 
 
 浏览器上中文乱码问题：一开始用response的setCharacterEncoding(String charset) 设置response的编码，但我们发现客户端还是不能正常显示文字
-原因：我们将response缓冲区的编码设置成UTF-8，但浏览器的默认编码是本地系	统的编码，因为我们都是中文系统，所以客户端浏览器的默认编码是GBK，
+原因：我们将response缓冲区的编码设置成UTF-8，但浏览器的默认编码是本地系统的编码，因为我们都是中文系统，所以客户端浏览器的默认编码是GBK，
 我们可以手动修改浏览器的编码是UTF-8。
 
 我们还可以在代码中指定浏览器解析页面的编码方式，
@@ -33,3 +33,14 @@ BASE64Encoder base64Encoder = new BASE64Encoder();
 }
 
 其中agent就是请求头User-Agent的值
+
+过滤器解决乱码问题 get乱码
+	public String getParameter(String name) {
+		String parameter = request.getParameter(name);//乱码
+		try {
+			parameter = new String(parameter.getBytes("iso8859-1"),"UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		return parameter;
+	}
