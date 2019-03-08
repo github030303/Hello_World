@@ -3,6 +3,10 @@ SQL注入，作为一个面试难点
 链表
 二叉树
 多线程（三人打牌）
+full gc 什么时候会，在频繁full gc时怎么解决
+四种引用的gc情况
+慢查询及解决方案
+map的put方法手写
 
 
 浏览器上中文乱码问题：一开始用response的setCharacterEncoding(String charset) 设置response的编码，但我们发现客户端还是不能正常显示文字
