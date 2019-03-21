@@ -13,3 +13,21 @@ https://blog.csdn.net/itcast_cn/article/details/84064928
 
 新东西
 https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis.html 
+
+Json数据
+[‎21/‎03/‎2019 3:30 PM] Zhao, Grace F.F. (KDi/DEL): 
+http://10.119.169.152:9200/_cat/indices?v
+http://10.119.169.152:9200/hadoop-journalnode-153-2019.03.20/doc/_search 
+
+ELK
+https://es.xiaoleilu.com/010_Intro/05_What_is_it.html
+https://blog.csdn.net/u013613428/article/details/51557804
+https://blog.csdn.net/u012373815/article/details/50403200
+https://www.elastic.co/guide/cn/kibana/current/timelion.html
+https://www.open-open.com/pdf/db25547c4e6e43a389b4743c5755a725.html
+https://blog.csdn.net/bluetjs/article/details/78770447
+
+POI
+https://blog.csdn.net/madmk/article/details/80006689
+https://blog.csdn.net/vbirdbest/article/details/72870714
+https://www.cnblogs.com/yeyinfu/p/7316998.html
