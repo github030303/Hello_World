@@ -52,3 +52,8 @@ https://blog.csdn.net/feixiang_gao/article/details/79254911
 多张jpg合成tif后避免tif文件过大的方法：
 https://blog.csdn.net/sinat_29048381/article/details/80006951
 
+linux操作
+对防火墙进行操作：systemctl [start|stop|restart|save|status] iptables.service
+增加开放端口到防火墙 vi + /etc/sysconfig/iptables
+判断Linux中tomcat是否启动(在tomcat目录下)：tail -f logs/catalina.out
+每次启动zookeeper时需要先启动jdk的配置文件：source /etc/profile
