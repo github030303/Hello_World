@@ -57,3 +57,8 @@ linux操作
 增加开放端口到防火墙 vi + /etc/sysconfig/iptables
 判断Linux中tomcat是否启动(在tomcat目录下)：tail -f logs/catalina.out
 每次启动zookeeper时需要先启动jdk的配置文件：source /etc/profile
+[root@localhost bin]# ./zkServer.sh start
+关闭：[root@localhost bin]# ./zkServer.sh stop
+查看状态：[root@localhost bin]# ./zkServer.sh status
+查看端口占用netstat -antp|grep 8019
+
